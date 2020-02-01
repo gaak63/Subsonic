@@ -4,7 +4,7 @@
           android:installLocation="internalOnly">
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-		android:targetPackage="github.daneren2005.dsub"
+		android:targetPackage="com.github.gaak63.gsub"
 		android:label="Tests" />
 
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -237,7 +237,7 @@
 				  android:syncable="true"/>
 
         <meta-data android:name="android.app.default_searchable"
-                   android:value="github.daneren2005.dsub.activity.QueryReceiverActivity"/>
+                   android:value="com.github.gaak63.gsub.activity.QueryReceiverActivity"/>
 
 	</application>
 

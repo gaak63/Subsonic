@@ -212,17 +212,17 @@ public final class Constants {
 	public static final String FRAGMENT_POSITION = "fragmentPosition";
 
     // Name of the preferences file.
-    public static final String PREFERENCES_FILE_NAME = "github.daneren2005.dsub_preferences";
-	public static final String OFFLINE_SYNC_NAME = "github.daneren2005.com.github.gaak63.gsub.offline";
+    public static final String PREFERENCES_FILE_NAME = "com.github.gaak63.gsub_preferences";
+	public static final String OFFLINE_SYNC_NAME = "com.github.gaak63.gsub.offline";
 	public static final String OFFLINE_SYNC_DEFAULT = "syncDefaults";
 
 	// Account prefs
 	public static final String SYNC_ACCOUNT_NAME = "Subsonic Account";
 	public static final String SYNC_ACCOUNT_TYPE = "subsonic.org";
-	public static final String SYNC_ACCOUNT_PLAYLIST_AUTHORITY = "github.daneren2005.com.github.gaak63.gsub.playlists.provider";
-	public static final String SYNC_ACCOUNT_PODCAST_AUTHORITY = "github.daneren2005.com.github.gaak63.gsub.podcasts.provider";
-	public static final String SYNC_ACCOUNT_STARRED_AUTHORITY = "github.daneren2005.com.github.gaak63.gsub.starred.provider";
-	public static final String SYNC_ACCOUNT_MOST_RECENT_AUTHORITY = "github.daneren2005.com.github.gaak63.gsub.mostrecent.provider";
+	public static final String SYNC_ACCOUNT_PLAYLIST_AUTHORITY = "com.github.gaak63.gsub.playlists.provider";
+	public static final String SYNC_ACCOUNT_PODCAST_AUTHORITY = "com.github.gaak63.gsub.podcasts.provider";
+	public static final String SYNC_ACCOUNT_STARRED_AUTHORITY = "com.github.gaak63.gsub.starred.provider";
+	public static final String SYNC_ACCOUNT_MOST_RECENT_AUTHORITY = "com.github.gaak63.gsub.mostrecent.provider";
 
 	public static final String TASKER_EXTRA_BUNDLE = "com.twofortyfouram.locale.intent.extra.BUNDLE";
 
