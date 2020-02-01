@@ -4,7 +4,7 @@ android {
 	compileSdkVersion 27
 
 	defaultConfig {
-		applicationId "github.daneren2005.com.github.gaak63.gsub"
+		applicationId "com.github.gaak63.gsub"
 		minSdkVersion 14
 		targetSdkVersion 26
 		versionCode 202

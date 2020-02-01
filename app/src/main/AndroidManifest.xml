@@ -36,14 +36,14 @@
     <supports-screens android:anyDensity="true" android:xlargeScreens="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
 
     <application android:label="@string/common.appname"
-    	android:backupAgent="github.daneren2005.com.github.gaak63.gsub.util.SettingsBackupAgent"
+    	android:backupAgent="com.github.gaak63.gsub.util.SettingsBackupAgent"
     	android:icon="@drawable/launch"
     	android:theme="@style/Theme.DSub.Light"
 		android:largeHeap="true">
     	
         <uses-library android:name="android.test.runner" />
 
-		<activity android:name="github.daneren2005.com.github.gaak63.gsub.activity.SubsonicFragmentActivity"
+		<activity android:name="com.github.gaak63.gsub.activity.SubsonicFragmentActivity"
 				  android:configChanges="orientation|keyboardHidden"
 				  android:launchMode="singleTask">
 			<intent-filter>
@@ -53,11 +53,11 @@
 			</intent-filter>
 		</activity>
 
-        <activity android:name="github.daneren2005.com.github.gaak63.gsub.activity.SettingsActivity"
+        <activity android:name="com.github.gaak63.gsub.activity.SettingsActivity"
                   android:configChanges="orientation|keyboardHidden"
                   android:launchMode="singleTask"/>
 
-        <activity android:name="github.daneren2005.com.github.gaak63.gsub.activity.VoiceQueryReceiverActivity"
+        <activity android:name="com.github.gaak63.gsub.activity.VoiceQueryReceiverActivity"
                   android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.media.action.MEDIA_PLAY_FROM_SEARCH" />
@@ -71,7 +71,7 @@
 			</intent-filter>
         </activity>
 
-        <activity android:name="github.daneren2005.com.github.gaak63.gsub.activity.QueryReceiverActivity"
+        <activity android:name="com.github.gaak63.gsub.activity.QueryReceiverActivity"
                   android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH"/>
@@ -80,7 +80,7 @@
         </activity>
 
 		<activity
-			android:name="github.daneren2005.com.github.gaak63.gsub.activity.EditPlayActionActivity"
+			android:name="com.github.gaak63.gsub.activity.EditPlayActionActivity"
 			android:label="@string/tasker.start_playing"
 			android:icon="@drawable/launch">
 
@@ -89,10 +89,10 @@
 			</intent-filter>
 		</activity>
 
-        <service android:name="github.daneren2005.com.github.gaak63.gsub.service.DownloadService"
+        <service android:name="com.github.gaak63.gsub.service.DownloadService"
                  android:label="DSub Playback Service"/>
 
-		<service android:name="github.daneren2005.com.github.gaak63.gsub.service.AutoMediaBrowserService"
+		<service android:name="com.github.gaak63.gsub.service.AutoMediaBrowserService"
 				 android:exported="true">
 
 			<intent-filter>
@@ -101,7 +101,7 @@
 		</service>
 
 		<service android:name="org.fourthline.cling.android.AndroidUpnpServiceImpl"/>
-		<service android:name="github.daneren2005.com.github.gaak63.gsub.service.sync.AuthenticatorService">
+		<service android:name="com.github.gaak63.gsub.service.sync.AuthenticatorService">
 			<intent-filter>
 				<action android:name="android.accounts.AccountAuthenticator"/>
 			</intent-filter>
@@ -109,7 +109,7 @@
 			<meta-data android:name="android.accounts.AccountAuthenticator"
 				android:resource="@xml/authenticator" />
 		</service>
-		<service android:name="github.daneren2005.com.github.gaak63.gsub.service.sync.PlaylistSyncService"
+		<service android:name="com.github.gaak63.gsub.service.sync.PlaylistSyncService"
 			android:exported="true"
 			android:process=":sync">
 
@@ -119,7 +119,7 @@
 			<meta-data android:name="android.content.SyncAdapter"
 				android:resource="@xml/playlists_syncadapter" />
 		</service>
-		<service android:name="github.daneren2005.com.github.gaak63.gsub.service.sync.PodcastSyncService"
+		<service android:name="com.github.gaak63.gsub.service.sync.PodcastSyncService"
 				 android:exported="true"
 				 android:process=":sync">
 
@@ -129,7 +129,7 @@
 			<meta-data android:name="android.content.SyncAdapter"
 					   android:resource="@xml/podcasts_syncadapter" />
 		</service>
-		<service android:name="github.daneren2005.com.github.gaak63.gsub.service.sync.StarredSyncService"
+		<service android:name="com.github.gaak63.gsub.service.sync.StarredSyncService"
 				 android:exported="true"
 				 android:process=":sync">
 
@@ -139,7 +139,7 @@
 			<meta-data android:name="android.content.SyncAdapter"
 					   android:resource="@xml/starred_syncadapter" />
 		</service>
-		<service android:name="github.daneren2005.com.github.gaak63.gsub.service.sync.MostRecentSyncService"
+		<service android:name="com.github.gaak63.gsub.service.sync.MostRecentSyncService"
 				 android:exported="true"
 				 android:process=":sync">
 
@@ -150,30 +150,30 @@
 					   android:resource="@xml/mostrecent_syncadapter" />
 		</service>
 
-		<service android:name="github.daneren2005.com.github.gaak63.gsub.service.HeadphoneListenerService"
+		<service android:name="com.github.gaak63.gsub.service.HeadphoneListenerService"
 			android:label="DSub Headphone Listener"/>
 		<receiver
-			android:name="github.daneren2005.com.github.gaak63.gsub.receiver.BootReceiver">
+			android:name="com.github.gaak63.gsub.receiver.BootReceiver">
 			<intent-filter>
 				<action
 					android:name="android.intent.action.BOOT_COMPLETED" />
 			</intent-filter>
 		</receiver>
 
-        <receiver android:name="github.daneren2005.com.github.gaak63.gsub.receiver.MediaButtonIntentReceiver">
+        <receiver android:name="com.github.gaak63.gsub.receiver.MediaButtonIntentReceiver">
         	<intent-filter>
 				<action android:name="android.intent.action.MEDIA_BUTTON" />
 			</intent-filter>
         </receiver>
 
-		<receiver android:name="github.daneren2005.com.github.gaak63.gsub.receiver.A2dpIntentReceiver">
+		<receiver android:name="com.github.gaak63.gsub.receiver.A2dpIntentReceiver">
 			<intent-filter>
 				<action android:name="android.music.playstatusrequest"/>
 			</intent-filter>
 		</receiver>
 
         <receiver
-			android:name="github.daneren2005.com.github.gaak63.gsub.provider.DSubWidget4x1"
+			android:name="com.github.gaak63.gsub.provider.DSubWidget4x1"
 			android:label="@string/widget.4x1">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
@@ -181,7 +181,7 @@
             <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget4x1"/>
         </receiver>
 		<receiver
-			android:name="github.daneren2005.com.github.gaak63.gsub.provider.DSubWidget4x2"
+			android:name="com.github.gaak63.gsub.provider.DSubWidget4x2"
 			android:label="@string/widget.4x2">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
@@ -189,7 +189,7 @@
             <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget4x2"/>
         </receiver>
 		<receiver
-			android:name="github.daneren2005.com.github.gaak63.gsub.provider.DSubWidget4x3"
+			android:name="com.github.gaak63.gsub.provider.DSubWidget4x3"
 			android:label="@string/widget.4x3">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
@@ -197,7 +197,7 @@
             <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget4x3"/>
         </receiver>
 		<receiver
-			android:name="github.daneren2005.com.github.gaak63.gsub.provider.DSubWidget4x4"
+			android:name="com.github.gaak63.gsub.provider.DSubWidget4x4"
 			android:label="@string/widget.4x4">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
@@ -206,31 +206,31 @@
         </receiver>
 
 		<receiver
-			android:name="github.daneren2005.com.github.gaak63.gsub.receiver.PlayActionReceiver">
+			android:name="com.github.gaak63.gsub.receiver.PlayActionReceiver">
 
 			<intent-filter>
 				<action android:name="com.twofortyfouram.locale.intent.action.FIRE_SETTING" />
 			</intent-filter>
 		</receiver>
 
-        <provider android:name="github.daneren2005.com.github.gaak63.gsub.provider.DSubSearchProvider"
+        <provider android:name="com.github.gaak63.gsub.provider.DSubSearchProvider"
                   android:authorities="com.github.gaak63.gsub.provider.DSubSearchProvider"/>
-		<provider android:name="github.daneren2005.com.github.gaak63.gsub.provider.PlaylistStubProvider"
+		<provider android:name="com.github.gaak63.gsub.provider.PlaylistStubProvider"
 			android:authorities="com.github.gaak63.gsub.playlists.provider"
 			android:label="@string/button_bar.playlists"
 			android:exported="false"
 			android:syncable="true"/>
-		<provider android:name="github.daneren2005.com.github.gaak63.gsub.provider.PodcastStubProvider"
+		<provider android:name="com.github.gaak63.gsub.provider.PodcastStubProvider"
 			android:authorities="com.github.gaak63.gsub.podcasts.provider"
 			android:label="@string/button_bar.podcasts"
 			android:exported="false"
 			android:syncable="true"/>
-		<provider android:name="github.daneren2005.com.github.gaak63.gsub.provider.StarredStubProvider"
+		<provider android:name="com.github.gaak63.gsub.provider.StarredStubProvider"
 				  android:authorities="com.github.gaak63.gsub.starred.provider"
 				  android:label="@string/main.albums_starred"
 				  android:exported="false"
 				  android:syncable="true"/>
-		<provider android:name="github.daneren2005.com.github.gaak63.gsub.provider.MostRecentStubProvider"
+		<provider android:name="com.github.gaak63.gsub.provider.MostRecentStubProvider"
 				  android:authorities="com.github.gaak63.gsub.mostrecent.provider"
 				  android:label="@string/main.albums_newest"
 				  android:exported="false"

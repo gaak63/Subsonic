@@ -61,7 +61,7 @@ import com.github.gaak63.gsub.service.RemoteController;
 
 public class DLNARouteProvider extends MediaRouteProvider {
 	private static final String TAG = DLNARouteProvider.class.getSimpleName();
-	public static final String CATEGORY_DLNA = "github.daneren2005.com.github.gaak63.gsub.DLNA";
+	public static final String CATEGORY_DLNA = "com.github.gaak63.gsub.DLNA";
 
 	private DownloadService downloadService;
 	private RemoteController controller;

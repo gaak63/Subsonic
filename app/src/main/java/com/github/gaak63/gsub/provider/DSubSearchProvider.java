@@ -47,7 +47,7 @@ import com.github.gaak63.gsub.util.Util;
 public class DSubSearchProvider extends ContentProvider {
 	private static final String TAG = DSubSearchProvider.class.getSimpleName();
 
-	private static final String RESOURCE_PREFIX = "android.resource://github.daneren2005.com.github.gaak63.gsub/";
+	private static final String RESOURCE_PREFIX = "android.resource://com.github.gaak63.gsub/";
 	private static final String[] COLUMNS = {"_id",
 			SearchManager.SUGGEST_COLUMN_TEXT_1,
 			SearchManager.SUGGEST_COLUMN_TEXT_2,

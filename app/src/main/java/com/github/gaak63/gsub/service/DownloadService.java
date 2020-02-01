@@ -102,14 +102,14 @@ import android.view.KeyEvent;
 public class DownloadService extends Service {
 	private static final String TAG = DownloadService.class.getSimpleName();
 
-	public static final String CMD_PLAY = "github.daneren2005.com.github.gaak63.gsub.CMD_PLAY";
-	public static final String CMD_TOGGLEPAUSE = "github.daneren2005.com.github.gaak63.gsub.CMD_TOGGLEPAUSE";
-	public static final String CMD_PAUSE = "github.daneren2005.com.github.gaak63.gsub.CMD_PAUSE";
-	public static final String CMD_STOP = "github.daneren2005.com.github.gaak63.gsub.CMD_STOP";
-	public static final String CMD_PREVIOUS = "github.daneren2005.com.github.gaak63.gsub.CMD_PREVIOUS";
-	public static final String CMD_NEXT = "github.daneren2005.com.github.gaak63.gsub.CMD_NEXT";
-	public static final String CANCEL_DOWNLOADS = "github.daneren2005.com.github.gaak63.gsub.CANCEL_DOWNLOADS";
-	public static final String START_PLAY = "github.daneren2005.com.github.gaak63.gsub.START_PLAYING";
+	public static final String CMD_PLAY = "com.github.gaak63.gsub.CMD_PLAY";
+	public static final String CMD_TOGGLEPAUSE = "com.github.gaak63.gsub.CMD_TOGGLEPAUSE";
+	public static final String CMD_PAUSE = "com.github.gaak63.gsub.CMD_PAUSE";
+	public static final String CMD_STOP = "com.github.gaak63.gsub.CMD_STOP";
+	public static final String CMD_PREVIOUS = "com.github.gaak63.gsub.CMD_PREVIOUS";
+	public static final String CMD_NEXT = "com.github.gaak63.gsub.CMD_NEXT";
+	public static final String CANCEL_DOWNLOADS = "com.github.gaak63.gsub.CANCEL_DOWNLOADS";
+	public static final String START_PLAY = "com.github.gaak63.gsub.START_PLAYING";
 	private static final long DEFAULT_DELAY_UPDATE_PROGRESS = 1000L;
 	private static final double DELETE_CUTOFF = 0.84;
 	private static final int REQUIRED_ALBUM_MATCHES = 4;

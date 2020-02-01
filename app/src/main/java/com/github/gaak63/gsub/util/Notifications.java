@@ -49,7 +49,7 @@ public final class Notifications {
 	public static final int NOTIFICATION_ID_PLAYING = 100;
 	public static final int NOTIFICATION_ID_DOWNLOADING = 102;
 	public static final int NOTIFICATION_ID_SHUT_GOOGLE_UP = 103;
-	public static final String NOTIFICATION_SYNC_GROUP = "github.daneren2005.com.github.gaak63.gsub.sync";
+	public static final String NOTIFICATION_SYNC_GROUP = "com.github.gaak63.gsub.sync";
 
 	private static boolean playShowing = false;
 	private static boolean downloadShowing = false;

@@ -107,8 +107,8 @@ public final class Util {
 	private static SimpleDateFormat DATE_FORMAT_NO_TIME = new SimpleDateFormat("MMM d, yyyy");
 	private static int CURRENT_YEAR = new Date().getYear();
 
-    public static final String EVENT_META_CHANGED = "github.daneren2005.com.github.gaak63.gsub.EVENT_META_CHANGED";
-    public static final String EVENT_PLAYSTATE_CHANGED = "github.daneren2005.com.github.gaak63.gsub.EVENT_PLAYSTATE_CHANGED";
+    public static final String EVENT_META_CHANGED = "com.github.gaak63.gsub.EVENT_META_CHANGED";
+    public static final String EVENT_PLAYSTATE_CHANGED = "com.github.gaak63.gsub.EVENT_PLAYSTATE_CHANGED";
 	
 	public static final String AVRCP_PLAYSTATE_CHANGED = "com.android.music.playstatechanged";
 	public static final String AVRCP_METADATA_CHANGED = "com.android.music.metachanged";
@@ -1489,7 +1489,7 @@ public final class Util {
 			intent.putExtra("duration", (long) downloadService.getPlayerDuration());
 			intent.putExtra("position", (long) downloadService.getPlayerPosition());
 			intent.putExtra("coverart", albumArtFile.getAbsolutePath());
-			intent.putExtra("package","github.daneren2005.com.github.gaak63.gsub");
+			intent.putExtra("package","com.github.gaak63.gsub");
 		} else {
 			intent.putExtra("track", "");
 			intent.putExtra("artist", "");
@@ -1499,7 +1499,7 @@ public final class Util {
 			intent.putExtra("duration", (long) 0);
 			intent.putExtra("position", (long) 0);
 			intent.putExtra("coverart", "");
-			intent.putExtra("package","github.daneren2005.com.github.gaak63.gsub");
+			intent.putExtra("package","com.github.gaak63.gsub");
 		}
 	}
 	

@@ -1248,7 +1248,7 @@ public class SubsonicActivity extends AppCompatActivity implements OnItemSelecte
 			PrintWriter printWriter = null;
 			try {
 
-				PackageInfo packageInfo = context.getPackageManager().getPackageInfo("github.daneren2005.com.github.gaak63.gsub", 0);
+				PackageInfo packageInfo = context.getPackageManager().getPackageInfo("com.github.gaak63.gsub", 0);
 				file = new File(Environment.getExternalStorageDirectory(), "com.github.gaak63.gsub-stacktrace.txt");
 				printWriter = new PrintWriter(file);
 				printWriter.println("Android API level: " + Build.VERSION.SDK);

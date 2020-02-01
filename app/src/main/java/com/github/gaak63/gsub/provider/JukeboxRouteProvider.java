@@ -36,7 +36,7 @@ import com.github.gaak63.gsub.service.RemoteController;
  * Created by Scott on 11/28/13.
  */
 public class JukeboxRouteProvider extends MediaRouteProvider {
-	public static final String CATEGORY_JUKEBOX_ROUTE = "github.daneren2005.com.github.gaak63.gsub.SERVER_JUKEBOX";
+	public static final String CATEGORY_JUKEBOX_ROUTE = "com.github.gaak63.gsub.SERVER_JUKEBOX";
 	private RemoteController controller;
 	private static final int MAX_VOLUME = 10;
 
